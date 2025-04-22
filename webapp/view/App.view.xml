@@ -3,4 +3,5 @@
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc">
     <Button text="Say hey" press=".onShowHey"/>
+    <Input value='{/recipient/name}' description="Hello {/recipient/name}" width="40%" valueLiveUpdate="true"/>
 </mvc:View>
