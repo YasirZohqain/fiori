@@ -7,10 +7,11 @@
         <pages>
             <Page title="{i18n>homePageTitle}">
                 <content>
-                    <Panel headerText="{i18n>helloPanelTitle}">
+                    <Panel headerText="{i18n>helloPanelTitle}" class="sapUiResponsiveMargin" width="auto">
                         <content>
-                            <Button text="{i18n>showHeyButtonText}" press=".onShowHey"/>
-                            <Input value='{/recipient/name}' description="Hello {/recipient/name}" width="40%" valueLiveUpdate="true"/>
+                            <Button class="sapUiSmallMarginEnd" text="{i18n>showHeyButtonText}" press=".onShowHey"/>
+                            <Input value='{/recipient/name}' width="40%" valueLiveUpdate="true"/>
+                            <Text class="sapUiSmallMargin" text="Hello {/recipient/name}"></Text>
                         </content>
                     </Panel>
                 </content>
